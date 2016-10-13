@@ -1,0 +1,854 @@
+* {
+	margin: 0;
+}
+/* .wrapper source http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+/* Tags - set here after loading reset.html */
+html, body {
+	width: 100%;
+}
+body {
+	margin: 10px 10px 10px 10px;
+	min-width: 1200px;
+}
+h1{
+	font-size: 30px;
+	font-weight: bold;
+	color: #ffffff;	
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+}
+h2{
+	font-size: 25px;
+	font-weight: bold;
+	color: #4aaaa5;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
+	text-align: center;
+	display: block;
+}
+h3{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4aaaa5;
+	text-align: center;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	line-height: 3;
+
+}
+h4{
+	font-size: 16px;
+	color: #2c2a2a;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */	
+	line-height: 3;
+	line-height: 2;
+	text-align: center;
+	display: block;
+}
+h5{
+	font-size: 15px;
+	color: #2c2a2a;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+}
+h6{
+	font-size: 14px;
+	color: #ffffff;
+	font-family: "Source Sans Pro", "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+}
+p {
+	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+	font-size: 15px;
+	color : #777777;
+}
+
+/* I have used IDs for unique elements and Classes for parts that I re-use in more than one place */
+#header {
+	background-color: #ffffff;
+	border-style: solid;
+	border-bottom-width: 3px;
+	border-color: #cccccc;
+	height: 100px;
+	width: 100%;
+	min-width: 1160px;
+	position: fixed;
+	top: 0px;
+	overflow: visible;
+	z-index: 100;
+}
+#left-side-header {
+	max-width: 100%;
+	float: left;
+}
+#right-side-header {display: inline-block;margin-left: 430px;}
+#main-logo{
+	width: 250px;
+	text-align: center;	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 30px;
+	background-color: #4aaaa5;
+	float:left;
+}
+#navigation{
+	position: relative;
+	float: left;
+	padding: 50px 20px 20px 20px;
+	height: 30px;
+	text-align: center;
+}
+#about, #portfolio, #contact {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+/* main content section */
+/*index.html*/
+#profile-img {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 10px 20px 10px 0px;
+}
+#profile-img-640 {
+	display: none;
+}
+#profile-img-768 {
+	display: none;
+	
+}
+#about-me {
+	max-height: 700px;
+	text-overflow: ellipsis;
+
+}
+#format-article {
+	margin-top: 20px;
+	padding-top: 10px;
+}
+/* portfolio.html */
+#my-portfolio {
+	height: 700px;
+}
+#format-portfolio {
+	margin-top: auto;
+	height: 700px;
+	width: 500px;
+	padding: 15px 50px;
+}
+
+/* connection section */
+#connect-details{
+    width: 270px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    min-height: 120px;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    border-style: solid;
+    border-width: 2px;
+    float: left;
+	}
+#ways-to-connect{
+	padding-left: 30px;
+	padding-top: 10px;
+	height: 70px;
+	
+}
+#linkedin, #github, #other {
+		width: 60px;
+		height: 60px;
+		float: left;
+		margin: 10px 5 10px 5px;
+		padding: 5px 5px 5px 5px;
+}
+#footer-text {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #ffffff;
+	min-width: 100%;
+}
+
+/* contact.html */
+#contact-me {
+    height: 500px;
+    max-height: 600px
+}
+#name {
+ width: 587px;
+ height : 25px;
+
+ 
+}
+#email {
+    width: 587px;
+ 	height : 25px;
+
+}
+#message {
+	width: 587px;
+    height: 200px;
+	resize: none; /* to stop scrolling behaviour */
+
+
+}
+#submit-location {
+	width: 100px;
+    margin: auto;
+}
+#submit-button {
+	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+ 	font-size: 15px;
+ 	color: #ffffff;
+ 	background-color : #4aaaa5;
+ 	border-style: solid;
+	border-width: 2px;
+	border-color:  #4aaaa5;
+	border-radius: 4px;
+	width: 100px;
+ 	height : 30px;
+ 	text-align: center;
+}
+#contact-form {
+	display :none;
+}
+/* unvisited link */
+a{
+    text-decoration: none;
+    color: #2c2a2a;
+}
+/* Pseudo classes */
+
+/* mouse over link */
+a:hover {
+    color: #777777;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a:focus {
+    color: #4aaaa5;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input#submit-button:focus {
+	border-color: #777777;
+
+}
+
+input#submit-button:hover {
+	background-color: #777777;
+
+}
+/* Classes */
+.project-640 {
+	display: none;
+}
+
+.input-box-format {
+ 	/* font-family: "Arial", "Helevetica Neue", "Helevetica", "Sans Serif"; */
+	font-family: "Open Sans", "Roboto", "Sans Serif"; /* Google Fonts incorporated */
+ 	font-size: 15px;
+ 	color : #4aaaa5;
+ 	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-radius: 4px;
+}
+
+.content {
+	margin-top: 103px;
+	padding-top: 20px;
+	background-color:  #f8f5f5;
+	width: 100%;
+	min-height: 800px;
+	min-width: 1200px;
+}
+.content-section{
+	float: left;
+	min-height: 80%;
+	height: auto;
+}
+.portfolio-title{
+    height: 32px;
+    width: 200px;
+    background-color: #4aaaa5;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    text-align: center;
+    color: #ffffff;
+}
+.portfolio-item {
+	float: left;
+	height: 150px;
+	width: 200px;
+	margin: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	position: relative;
+	display: inline;
+}
+.underlines {
+	border-style: solid;
+	border-bottom-width: 1px;
+	border-color: #cccccc;
+	margin-bottom: 10px;
+}
+
+.page-indent {
+	margin-left: 200px;
+}
+.page-content-layout {
+	margin-top: 20px;
+	margin-right: 20px;
+	width: 587px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 2px;
+	float: left;
+	line-height: 1.5;
+}
+
+.footer{
+	 background-color: #666666;
+	 border-top-color: #4aaaa5;
+	 border-top-width: 5px;
+	 display: block;
+	 width: 100%;
+	 min-width: 1200px;
+	 border-style: solid;
+}
+
+ /* .wrapper source http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	padding-left:10px
+	padding-right: 10px;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+ /* .push source http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
+.footer, .push {
+	height: 4em;
+}
+
+/* media queries for responsive design */
+
+/* medium devices have px sz from 768px to 980px */
+ @media only screen and (min-width: 769px) and (max-width : 980px) {
+ 		body {
+ 			width: 100%;
+ 		}
+ 		/* IDs */
+ 		#header {
+    		position: static;
+
+    	}
+    	#left-side-header {
+			width: 40%;
+		}
+		#right-side-header {
+			width: 50%;
+			margin-left: 20px;
+		}
+
+ 		#article-p-1{
+    		display: none;
+    	}
+    	#profile-img-640{
+			/* width: 100%; */
+			/* height: 50%; */
+			display: none;
+			/* margin: 0px 20px 10px 0px; */
+			}
+		#profile-img {
+			display: none;
+		}
+		#profile-img-768{
+			display: block;
+			width: 100%;
+			margin-bottom: 20px;
+			background-color: white;
+		}
+		#format-article {
+			margin-top: 0px;
+		}
+		#bio-and-content-section {
+			min-height: 900px;
+			width: 40%;
+		}
+		#about-me {
+			width: 80%;
+			min-height: 900px;
+		}
+		#connect-details {
+		    width: 45%%;
+
+		}
+		/* For portfolio.html */
+		#portfolio-content {
+			min-height: 1600px;
+			min-width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			height: auto;
+		}
+		#portfolio-content-section {
+ 			height: auto;
+ 			width: 100%;
+ 		}
+		#my-portfolio{
+			width: 87%;
+			margin-right: 0px;
+			padding-right: 20px;
+			padding-left:  20px;
+			min-height: 1350px;
+			margin-left: 20px;
+			height: auto;
+		}
+		#format-portfolio {
+			min-height: 1250px;
+			width: 100%;
+			padding: 0px;
+			margin: auto;
+			height: auto;
+		}
+ 		
+
+		/* Classes */
+		.content {
+			margin-right: 0px;
+			min-height: 1000px;
+			height: auto;
+			padding-bottom: 20px;
+			margin-top: 0px;
+			padding-top: 0px;
+			width: 100%
+			min-width:100%;
+		}		
+		.page-indent {
+		    margin-left: 50px;
+		}
+		.portfolio-item {
+		  	width: 100%;
+		  	margin-left: 0px;
+		  	width: 90%;
+		  	display: block;
+		  	height: 200px;
+		  	width: 95%;
+		  	margin-left: 10px;
+		}
+
+		.portfolio-title {
+			width: 100%;
+			top: 130px;
+		}
+
+		.project {
+			display: none;
+		}
+		.project-640 {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+
+    }
+    
+ /* Small devices have px sz from 640px to 768px */
+ /* must specify max and min width otherwise the media query styles flow down to 640px and mess it up! */
+ @media only screen and (min-width: 641px) and (max-width : 768px) {
+		body {
+ 			min-width: 100%;
+ 		}
+ 		/* IDs */
+ 		/* Header and Navigation sections */
+		#header {
+    		position: static;
+    		top: 0px;
+    		width: 100%;
+    		display:  block;
+    		min-width: 100%;
+    		/* min-width: 100px; */
+    		position: static;
+    		min-height: 100px;
+    		height: auto;
+    		}
+		#left-side-header {
+			min-width: 600px;
+			margin-right: 0px;
+			margin-left: 20px;
+			display: block;
+			min-width: 30%;
+			height: auto;
+			min-height: 5%;
+		}
+		#main-logo {
+    		width: 100%;
+    		display:  block;
+    	}
+		#right-side-header {
+			width: 35%;
+			float: right;
+			margin-left: 0px;
+			height: auto;
+			min-height: 5%;
+		}
+		#navigation {
+			padding: 20px 0 20px 0px;
+			display:  block;
+			height: auto;
+			float: left;
+		}
+		#about, #portfolio, #contact {
+			min-width: 15%;
+			padding-top: 40px;
+		}
+/* right hand side bar with connection information */
+		#ways-to-connect{
+			padding-left: 30%;
+		}
+		#connect-details {
+		    width: 100%;
+		    display: block;
+		    width: 87%;
+		    display: block;
+		    margin-right: 0px;
+		    margin-bottom: 0px;
+		    margin-right: 20px;
+		    padding-right: 20px;
+		    padding-left: 20px;
+		    min-height: 150px;
+		    height: auto;
+		    margin-right: 0px;
+		    padding-right: 20px;
+		    margin-bottom: 20px;
+		    padding-left: 20px;
+		   }
+/* For index.html */
+		#bio-and-content-section {
+    		height: auto;
+    		min-width: 100%;
+ 		}
+		#about-me {
+			height: auto;
+			width: 87%;
+			margin-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			height: auto;
+			min-height: 750px;
+			overflow: auto;
+		}
+		#format-article {
+			margin-top: 0px;	
+		}
+    	#article-p-1{
+    		display: none; 
+    	}
+    	#profile-img-768 {
+			width: 70%;
+			height: 300px;
+			display: block;
+			float: left;
+			margin: 10px 20px 10px 0px;
+			}
+		#profile-img {
+			display: none;
+		}
+		#profile-img-640{
+			display: none;
+		}
+
+ 		
+/* For portfolio.html */
+		#portfolio-content {
+			min-width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			height: auto;
+			min-height: 1100px;
+		}
+		#portfolio-content-section {
+ 			height: auto;
+ 			width: 100%;
+ 		}
+		#my-portfolio{
+			width: 87%;
+			margin-right: 0px;
+			margin-left: 0px;
+			padding-right: 20px;
+			padding-left:  20px;
+			margin-left: 20px;
+			height: auto;
+		}
+		#format-portfolio {
+			min-height: 720px;
+			width: 95%;
+			padding: 25px;
+			margin: 0px;
+			height: auto;
+		}
+ 		
+		#connect-title {
+			width:  100%;
+		}
+		#contact-me{
+			margin-left: 20px;
+			width: 84%;
+			height: auto;
+			min-height: 475px;
+		}
+
+/* Classes */
+		.input-box-format {
+			max-width: 100%;
+		}
+		.page-indent {
+		    margin-left: 0px;
+		}
+		.content {
+			display: block;
+			min-width: 100%;
+			margin-right: 0px;
+			min-height: 1100px;
+			height: auto;
+			padding-bottom: 20px;
+			margin-top: 0px;
+			padding-top: 0px;
+		}		
+
+		.portfolio-item {
+			height: 200px;	
+			width: 250px;
+		}
+
+		.portfolio-title {width: 100%;top: 65%;}
+		.project {
+			display: none;
+		}
+		.project-640 {
+			display: block;
+			float: left;
+			height: 200px;
+			width: 250px;
+		}
+
+		.footer {
+			min-width: 100%;
+			height: auto;
+			width: 100%;
+			display: block;
+		}
+
+
+    }
+
+ /* extra small devices have px sz below 640px */
+ @media only screen and (max-width: 640px) {
+ 
+ 		body {
+ 			min-width: 100%;
+ 		}
+ 		/* IDs */
+ 		/* Header and Navigation sections */
+
+		#header {
+    		position: static;
+    		top: 0px;
+    		width: 100%;
+    		display:  block;
+    		min-width: 100%;
+    		position: static;
+    		min-height: 10%;
+    		height: auto;
+        }
+		#left-side-header {
+			min-width: 600px;
+			margin-right: 0px;
+			display: block;
+			min-width: 100%;
+			height: auto;
+			min-height: 5%;
+		}
+		#main-logo {
+    		width: 100%;
+    		display:  block;
+    	}
+		#right-side-header {
+			min-width: 100%;
+			width: 100%;
+			margin-left: 0px;
+			min-height: 100%;
+			height: auto;
+			min-height: 5%;
+		}
+		#navigation {
+			min-width: 100%;
+			padding: 20px 0 20px 0px;
+			display:  block;
+			min-height: 100%;
+			height: auto;
+		}
+		#about, #portfolio, #contact {
+			float: left;
+			min-width: 28%;
+			min-height: 100%;
+		}
+
+/* right hand side bar with connection information */
+		#ways-to-connect{
+			padding-left: 30%;
+		}
+		#connect-details {
+		    min-width: 100%%;
+		    display: block;
+		    width: 87%;
+		    display: block;
+		    margin-right: 0px;
+		    margin-bottom: 0px;
+		    margin-right: 20px;
+		    padding-right: 20px;
+		    padding-left: 20px;
+		    min-height: 150px;
+		    height: auto;
+		    margin-right: 0px;
+		    padding-right: 20px;
+		    margin-bottom: 20px;
+		    padding-left: 20px;
+		   }
+/* For index.html */
+		#bio-and-content-section {
+    		height: auto;
+    		min-width: 100%;
+ 		}
+		#about-me {
+			height: auto;
+			width: 87%;
+			margin-left: 20px;
+			padding-right: 20px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			height: auto;
+			min-height: 750px;
+			overflow: auto;
+		}
+		#format-article {
+			margin-top: 0px;	
+		}
+    	#article-p-1{
+    		display: none;
+    	}
+    	#profile-img-640{
+			width: 100%;
+			height: 200px;
+			display: block;
+			margin: 0px 20px 10px 0px;
+			}
+		#profile-img {
+			display: none;
+		}
+		#profile-img-768{
+			display: none;
+		}
+
+ 		
+/* For portfolio.html */
+		#portfolio-content {
+			min-height: 1600px;
+			min-width: 100%;
+			padding-left: 0px;
+			padding-right: 0px;
+			height: auto;
+		}
+		#portfolio-content-section {
+ 			height: auto;
+ 			width: 100%;
+ 		}
+		#my-portfolio{
+			width: 87%;
+			margin-right: 0px;
+			padding-right: 20px;
+			padding-left:  20px;
+			min-height: 1350px;
+			margin-left: 20px;
+			height: auto;
+		}
+		#format-portfolio {
+			min-height: 1250px;
+			width: 100%;
+			padding: 0px;
+			margin: auto;
+			height: auto;
+		}
+ 		
+		#connect-title {
+			width:  100%;
+		}
+		#contact-me{
+			margin-left: 20px;
+			width: 84%;
+			height: auto;
+			min-height: 475px;
+		}
+
+/* Classes */
+		.input-box-format {
+			max-width: 100%;
+		}
+		.page-indent {
+		    margin-left: 0px;
+		}
+		.content {
+			display: block;
+			/* width: 100%; */
+			min-width: 100%;
+			margin-right: 0px;
+			min-height: 1000px;
+			height: auto;
+			padding-bottom: 20px;
+			margin-top: 0px;
+			padding-top: 0px;
+		}		
+		.portfolio-item {
+		  	width: 100%;
+		  	margin-left: 0px;
+		  	width: 90%;
+		  	display: block;
+		  	height: 200px;
+		  	width: 95%;
+		  	margin-left: 10px;
+		}
+
+		.portfolio-title {
+			width: 100%;
+			top: 130px;
+		}
+		.project {
+			display: none;
+		}
+		.project-640 {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.footer {
+			min-width: 100%;
+			height: auto;
+			width: 100%;
+			display: block;
+		}
+
+}
+
