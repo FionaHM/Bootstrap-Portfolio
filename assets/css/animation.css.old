@@ -1,0 +1,90 @@
+.test {
+    position: relative;
+    -webkit-animation-name: mail; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 3s;
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 4; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+
+.test1{
+    position: relative;
+    -webkit-animation-name: github; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 4s;
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 4; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+
+.test2 {
+    position: relative;
+    -webkit-animation-name: linkedin; /* Chrome, Safari, Opera */
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 4; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+.nav-1 {
+    position: relative;
+    -webkit-animation-name: nav; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 2; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+.nav-2 {
+    position: relative;
+    -webkit-animation-name: nav2; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 4; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+.nav-3 {
+    position: relative;
+    -webkit-animation-name: nav3; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: .75s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 3; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+}
+
+
+
+/* Standard syntax */
+@keyframes nav {
+      
+    0%   {top:-20px;}
+    100% {top:20px;}
+}
+@keyframes nav2 {
+      
+    0%   {top:-10px;}
+    100% {top:10px;}
+}
+
+@keyframes nav3 {
+      
+    0%   {top:-15px;}
+    100% {top:15px;}
+}
+@keyframes mail {
+      
+    0%   {top:-20px;}
+    100% {top:20px;}
+}
+
+@keyframes github {
+      
+    0%   {top:-10px;}
+    100% {top:10px;}
+}
+
+@keyframes linkedin {
+      
+    0%   {top:-15px;}
+    100% {top:15px;}
+}

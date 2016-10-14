@@ -1,0 +1,78 @@
+a.contact-1:hover {
+    position: relative;
+    -webkit-animation-name:  contact; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 4; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    /*-webkit-animation:contact 4s linear infinite;*/
+    
+    }
+
+a.nav-1:hover {
+    position: relative;
+    -webkit-animation-name: nav; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2.5s;  Chrome, Safari, Opera 
+    -webkit-animation-timing-function: cubic-bezier(0.42,0,0.58,.42);
+    -webkit-animation-iteration-count: 2; 
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    /*-webkit-animation:nav 4s linear infinite;*/
+}
+
+.rotate-1 {
+    position: relative;
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    -webkit-animation:rotate 4s linear infinite;
+}
+
+.rotate-2 {
+    position: relative;
+  /*  -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    -webkit-animation:rotate2 4s linear infinite;
+}
+.rotate-3 {
+    position: relative;
+ /*   -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    -webkit-animation:rotate3 4s linear infinite;
+}
+.space-1 {
+    left: 20px;
+}
+.space-2 {
+    left: -40px;
+    top: -10px;
+}
+
+
+
+@keyframes rotate {
+  
+   100% { -webkit-transform: rotate(360deg); } 
+
+}
+@keyframes rotate2 {
+  
+   80% { -webkit-transform: rotate(-360deg); } 
+
+}
+@keyframes rotate3 {
+  
+   90% { -webkit-transform: rotate(360deg); } 
+
+}
+
+
+@keyframes nav {
+    0%   {top:-15px;}
+    100% {top:15px;}
+   /*100% { -webkit-transform: rotate(360deg); } */
+
+}
+
+
+
+@keyframes contact {
+      
+    0%   {top:-15px;}
+    100% {top:15px;}
+}

@@ -23,6 +23,7 @@ p{
 	line-height: 1.5;
 };
 
+.
 
 /* IDs */
 #format-portfolio {
@@ -31,8 +32,8 @@ p{
 }
 
 #linkedin, #email, #github {
-		width: 100%;
-		height: auto;
+	width: 100%;
+	height: auto;
 
 }
 /* classes */
