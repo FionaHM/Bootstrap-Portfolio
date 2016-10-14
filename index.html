@@ -4,6 +4,8 @@
 	<title></title>
 	<!-- I selected the Yeti Theme from Bootswatch - this is available on the bootstrapcdn. -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css">
+	
+	
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -27,25 +29,29 @@
 <!-- Main content section -->
 <div class="container">
 	<div class="row">
-	   <div class="col-md-8">
+	   <div class="col-md-8 col-xs-12">
 		   <div class="panel panel-primary">	
 		   		<div class="panel-heading">
-				    <h3 class="panel-title">About Me</h3><br>
+				    <h3 class="panel-title text-center">About Me</h3><br>
 				</div>
+				
 			  	<div class="panel-body">
-			  		<p>Welcome! You are about to view my Web Development Portfolio, but first let me introduce myself. </p><br>
-			  		<img src="assets/images/me_768.jpg" alt="Fiona Hegarty" class="img-rounded img-responsive image-format">
+			  		<p id="hide-p1-s-xs">Welcome! You are about to view my Web Development Portfolio, but first let me introduce myself. </p><br>
+			  		<img src="assets/images/me_768.jpg" alt="Fiona Hegarty" class="img-rounded img-responsive image-format" id="main-image-md">
 			    	 <p>I am originally from Ireland and left in 2000 after completing my Masters Degree. I hold a Bachelor of Engineering and a Master of Management Science from the National University of Ireland, UCD, and a Bachelor of Science in Cloud Computing from Cork Regional Technical College, Ireland. I have spent the past 16 years both living and working around the world - London, Singapore, Dublin, Vilnius and Chicago, where I am currently based.</p><br>
                      <p>I have recently moved into Web Development, having spent most of my career working in IT Production, in both Service Delivery and IT Projects.  I started my career as an IT Management Consultant with PricewaterhouseCoopers in London, after which I moved into the Investment Banking domain, where I worked for UBS in both London and Singapore.</p><br>
                      <p>Now that you know a bit about me, please use the links at the top of the page to view my portfolio and contact me. I hope to hear from you in the future!</p></br>
 			 	</div>
 		   </div>
 	   </div>
-	   <div class="col-md-4">
+	   <div class="col-md-1 col-xs-3">
+	   </div>
+	   <div class="col-md-3 col-xs-6">
 	        	<div class="panel panel-info">	
 					<div class="panel-heading">
 				    	<h4 class="panel-title">Connect With Me</h4><br>
 					</div>
+
 			  		<div class="panel-body">
 			  			<div class="row">
 			  				<div class="col-md-4 col-s-4 col-xs-4">
@@ -66,10 +72,9 @@
 <!-- Sticky footer -->
 <footer class="footer">
     <div class="container-fluid text-center">
-    	<br>
-    		<p class="underline"></p><br>
-        	<p class="text-muted">Copyright <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2016 Fiona Hegarty</p>
-        </div>
+	    <div class="well">
+	        	<p class="text-muted">Copyright <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> 2016 Fiona Hegarty</p>
+	    </div>
 	</div>
 </footer>
 	      

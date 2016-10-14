@@ -11,10 +11,8 @@ h2 {
 	font-size: 20px;
 }
 h3 {
-	text-align: center;
 	margin: auto;
 	line-height: 3;
-	font-size: 18px;
 }
 h4 {
 	text-align: center;
@@ -34,7 +32,7 @@ p{
 }
 /* classes */
 .panel-heading {
-	padding: 0px 0px 0px 0px; 
+	padding: 20px 15px 5px 15px;
 }
 .underline {
 	border-bottom: solid;
@@ -46,21 +44,43 @@ p{
 	margin: auto;
 	float: left;
 	width: 50%;
-	padding: 5px 25px 10px 0px;
+	padding: 15px 25px 10px 0px;
 
 }
 
 
 /* navbar covers content at smaller screen sizes - need more padding */
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
   body {
     padding-top: 250px;
 
-  }
-}
-@media (min-width: 641px) and (max-width: 768px){
-  body {
-    padding-top: 350px;
 
   }
+  #main-image-md {
+  	display : none;
+  }
+  .image-format {
+	margin: auto;
+	width: 50%;
+	padding: 15px 25px 10px 0px;
+
+}
+}*/
+@media (max-width: 768px){
+  body {
+    padding-top: 250px;
+	
+  }
+   #main-image-md {
+  	display : block;
+  }
+  .image-format {
+	margin: auto;
+	width: 100%;
+	padding: 15px 25px 10px 0px;
+
+}
+#hide-p1-s-xs {
+	display:none;
+}
 }
